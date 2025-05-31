@@ -1,0 +1,655 @@
+/* ==========================================================================
+   Base Styles
+   ========================================================================== */
+body {
+  font-family: 'Inter', 'Noto Sans', sans-serif;
+  background-color: #ffffff;
+  color: #111518;
+  margin: 0;
+  padding: 0;
+}
+
+/* ==========================================================================
+   Layout Styles
+   ========================================================================== */
+/* Main container that wraps the entire page */
+.layout-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Container for the main content area */
+.layout-content-container {
+  flex: 1;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* ==========================================================================
+   Header Styles
+   ========================================================================== */
+/* Main header container */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+/* ==========================================================================
+   Navigation Styles
+   ========================================================================== */
+/* Container for navigation links */
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+/* Individual navigation link */
+.nav-link {
+  color: #4b5563;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.nav-link:hover {
+  color: #111518;
+}
+
+/* Active navigation link state */
+.nav-link.active {
+  color: #111518;
+  font-weight: 600;
+}
+
+/* ==========================================================================
+   Button Styles
+   ========================================================================== */
+/* Base button styles */
+.btn {
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+/* Primary button variant */
+.btn-primary {
+  background-color: #111518;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #1f2937;
+}
+
+/* Secondary button variant */
+.btn-secondary {
+  background-color: #f3f4f6;
+  color: #111518;
+}
+
+.btn-secondary:hover {
+  background-color: #e5e7eb;
+}
+
+/* ==========================================================================
+   Projects Page Styles
+   ========================================================================== */
+/* Grid container for projects */
+.projects-grid-full {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+/* Individual project card */
+.project-card-full {
+  background: white;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
+.project-card-full:hover {
+  transform: translateY(-4px);
+}
+
+/* Project cover image */
+.project-image-full {
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Project content container */
+.project-content-full {
+  padding: 1.5rem;
+}
+
+/* Project title */
+.project-title-full {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+/* Project description */
+.project-description-full {
+  color: #4b5563;
+  margin-bottom: 1rem;
+}
+
+/* Technology tags container */
+.project-tags-full {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+/* Individual technology tag */
+.project-tag-full {
+  background-color: #f3f4f6;
+  color: #111518;
+  padding: 0.25rem 0.75rem;
+  border-radius: 2rem;
+  font-size: 0.875rem;
+}
+
+/* ==========================================================================
+   Responsive Styles
+   ========================================================================== */
+/* Tablet and smaller desktop screens */
+@media (max-width: 900px) {
+  .layout-content-container {
+    max-width: 100vw;
+    padding: 0 1vw;
+  }
+  
+  .projects-grid-full {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+}
+
+/* Mobile screens */
+@media (max-width: 600px) {
+  /* Header adjustments for mobile */
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    padding: 0.75rem 2vw;
+  }
+  
+  .nav-links {
+    gap: 1rem;
+  }
+  
+  /* Content container adjustments */
+  .layout-content-container {
+    padding: 0 0.5vw;
+  }
+  
+  /* Projects grid adjustments */
+  .projects-grid-full {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  /* Project card adjustments */
+  .project-image-full {
+    height: 180px;
+  }
+  
+  .project-content-full {
+    padding: 1rem;
+  }
+  
+  .project-title-full {
+    font-size: 1.1rem;
+  }
+  
+  .project-description-full {
+    font-size: 0.95rem;
+  }
+}
+
+/* ==========================================================================
+   Hero Section Styles
+   ========================================================================== */
+/* Hero section container */
+.hero {
+  min-height: 500px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 4rem;
+  color: white;
+  border-radius: 1rem;
+  margin-bottom: 4rem;
+}
+
+/* Hero title */
+.hero-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+/* Hero subtitle */
+.hero-subtitle {
+  font-size: 1.25rem;
+  max-width: 600px;
+  margin-bottom: 2rem;
+}
+
+/* ==========================================================================
+   Section Title Styles
+   ========================================================================== */
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: #111518;
+}
+
+/* ==========================================================================
+   Featured Projects Styles
+   ========================================================================== */
+/* Projects grid container */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+/* Project card */
+.project-card {
+  background: white;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+}
+
+/* Project image */
+.project-image {
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Project content */
+.project-card > div {
+  padding: 1.5rem;
+}
+
+/* Project title */
+.project-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 1rem;
+}
+
+/* Project description */
+.project-description {
+  color: #4b5563;
+  margin: 0 1rem 1rem;
+}
+
+/* ==========================================================================
+   About Section Styles
+   ========================================================================== */
+/* About section container */
+.about-section {
+  margin-bottom: 4rem;
+}
+
+/* Profile container */
+.profile {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+/* Profile image */
+.profile-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  flex-shrink: 0;
+}
+
+/* Profile info */
+.profile-info {
+  flex: 1;
+}
+
+/* Profile name */
+.profile-name {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+/* Profile title */
+.profile-title {
+  font-size: 1.25rem;
+  color: #4b5563;
+  margin-bottom: 1rem;
+}
+
+/* Profile description */
+.profile-description {
+  color: #4b5563;
+  line-height: 1.6;
+}
+
+/* ==========================================================================
+   Contact Section Styles
+   ========================================================================== */
+/* Contact text */
+.contact-text {
+  text-align: center;
+  color: #4b5563;
+  margin-bottom: 2rem;
+}
+
+/* Social links container */
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+/* Social link */
+.social-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #4b5563;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.social-link:hover {
+  color: #111518;
+}
+
+/* Social icon */
+.social-icon {
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f3f4f6;
+  border-radius: 50%;
+}
+
+/* ==========================================================================
+   Footer Styles
+   ========================================================================== */
+/* Footer container */
+footer {
+  background-color: #f9fafb;
+  padding: 2rem 0;
+  margin-top: 4rem;
+}
+
+/* Footer content */
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Footer text */
+.footer-text {
+  color: #4b5563;
+}
+
+/* --- Enhanced About Page Styles --- */
+
+/* Profile Card */
+.profile-card {
+  background: #fff;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+  border-radius: 1rem;
+  padding: 2.5rem 2rem;
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  margin-bottom: 3rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.profile-card .profile-image {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  border: 4px solid #f3f4f6;
+}
+.profile-card .profile-info {
+  flex: 1;
+}
+.profile-card .profile-name {
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin-bottom: 0.3rem;
+}
+.profile-card .profile-title {
+  font-size: 1.2rem;
+  color: #2563eb;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.profile-card .profile-description {
+  color: #374151;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+/* Section Divider */
+.section-divider {
+  border: none;
+  border-top: 2px solid #f3f4f6;
+  margin: 3rem 0 2.5rem 0;
+}
+
+/* Timeline with Markers */
+.timeline {
+  position: relative;
+  margin-left: 1.5rem;
+  margin-bottom: 3rem;
+}
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 0.5rem;
+  top: 0.5rem;
+  bottom: 0.5rem;
+  width: 3px;
+  background: #e5e7eb;
+  border-radius: 2px;
+}
+.timeline-item {
+  position: relative;
+  margin-bottom: 2.5rem;
+  padding-left: 2.5rem;
+}
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+.timeline-marker {
+  position: absolute;
+  left: -0.2rem;
+  top: 0.2rem;
+  width: 1.1rem;
+  height: 1.1rem;
+  background: #2563eb;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  box-shadow: 0 0 0 2px #e5e7eb;
+}
+.timeline-date {
+  font-size: 1rem;
+  color: #2563eb;
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+}
+.timeline-content h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+}
+.timeline-subtitle {
+  color: #374151;
+  font-size: 1rem;
+  margin-bottom: 0.2rem;
+}
+.timeline-description {
+  color: #4b5563;
+  font-size: 0.98rem;
+  line-height: 1.6;
+}
+
+/* Skills Badges */
+.skills-grid {
+  display: flex;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+.skill-category {
+  min-width: 220px;
+}
+.skill-category h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.7rem;
+}
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.skill-tag {
+  background: #e0e7ff;
+  color: #1e293b;
+  padding: 0.45rem 1.1rem;
+  border-radius: 2rem;
+  font-size: 0.98rem;
+  font-weight: 600;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+}
+
+/* Hobbies Cards */
+.hobbies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+.hobby-item {
+  background: #f3f4f6;
+  border-radius: 0.75rem;
+  padding: 2rem 1.2rem 1.5rem 1.2rem;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  transition: transform 0.18s;
+}
+.hobby-item:hover {
+  transform: translateY(-6px) scale(1.03);
+}
+.hobby-icon {
+  font-size: 2.2rem;
+  margin-bottom: 0.7rem;
+}
+.hobby-item h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+}
+.hobby-item p {
+  color: #4b5563;
+  font-size: 0.97rem;
+}
+
+/* Section Title Enhancement */
+.section-title {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #111518;
+  margin-bottom: 2.2rem;
+  text-align: center;
+  letter-spacing: -0.01em;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 900px) {
+  .profile-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+  .skills-grid {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}
+@media (max-width: 600px) {
+  .profile-card {
+    padding: 1.2rem 0.5rem;
+  }
+  .section-title {
+    font-size: 1.4rem;
+  }
+  .timeline {
+    margin-left: 0.5rem;
+  }
+  .hobbies-grid {
+    gap: 1rem;
+  }
+}
+
+.section-title[style*="cursor:pointer"],
+.project-card[style*="cursor:pointer"],
+a.project-card {
+  cursor: pointer;
+}
+a.project-card,
+a.section-title {
+  text-decoration: none;
+  color: inherit;
+}
+a.project-card:hover,
+a.section-title:hover {
+  text-decoration: underline;
+}

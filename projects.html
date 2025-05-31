@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Google Fonts Preconnect for better performance -->
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <!-- Load Inter and Noto Sans fonts with various weights -->
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
+    />
+    <!-- Page Title -->
+    <title>Projects - Data Insights</title>
+    <!-- Favicon placeholder -->
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Tailwind CSS with container queries plugin -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  </head>
+  <body>
+    <!-- Main Layout Container -->
+    <div class="layout-container">
+      <!-- Header Section -->
+      <header>
+        <!-- Logo and Brand Name -->
+        <div class="flex items-center gap-4">
+          <!-- SVG Logo -->
+          <div class="size-4">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M13.8261 30.5736C16.7203 29.8826 20.2244 29.4783 24 29.4783C27.7756 29.4783 31.2797 29.8826 34.1739 30.5736C36.9144 31.2278 39.9967 32.7669 41.3563 33.8352L24.8486 7.36089C24.4571 6.73303 23.5429 6.73303 23.1514 7.36089L6.64374 33.8352C8.00331 32.7669 11.0856 31.2278 13.8261 30.5736Z"
+                fill="currentColor"
+              ></path>
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M39.998 35.764C39.9944 35.7463 39.9875 35.7155 39.9748 35.6706C39.9436 35.5601 39.8949 35.4259 39.8346 35.2825C39.8168 35.2403 39.7989 35.1993 39.7813 35.1602C38.5103 34.2887 35.9788 33.0607 33.7095 32.5189C30.9875 31.8691 27.6413 31.4783 24 31.4783C20.3587 31.4783 17.0125 31.8691 14.2905 32.5189C12.0012 33.0654 9.44505 34.3104 8.18538 35.1832C8.17384 35.2075 8.16216 35.233 8.15052 35.2592C8.09919 35.3751 8.05721 35.4886 8.02977 35.589C8.00356 35.6848 8.00039 35.7333 8.00004 35.7388C8.00004 35.739 8 35.7393 8.00004 35.7388C8.00004 35.7641 8.0104 36.0767 8.68485 36.6314C9.34546 37.1746 10.4222 37.7531 11.9291 38.2772C14.9242 39.319 19.1919 40 24 40C28.8081 40 33.0758 39.319 36.0709 38.2772C37.5778 37.7531 38.6545 37.1746 39.3151 36.6314C39.9006 36.1499 39.9857 35.8511 39.998 35.764ZM4.95178 32.7688L21.4543 6.30267C22.6288 4.4191 25.3712 4.41909 26.5457 6.30267L43.0534 32.777C43.0709 32.8052 43.0878 32.8338 43.104 32.8629L41.3563 33.8352C43.104 32.8629 43.1038 32.8626 43.104 32.8629L43.1051 32.865L43.1065 32.8675L43.1101 32.8739L43.1199 32.8918C43.1276 32.906 43.1377 32.9246 43.1497 32.9473C43.1738 32.9925 43.2062 33.0545 43.244 33.1299C43.319 33.2792 43.4196 33.489 43.5217 33.7317C43.6901 34.1321 44 34.9311 44 35.7391C44 37.4427 43.003 38.7775 41.8558 39.7209C40.6947 40.6757 39.1354 41.4464 37.385 42.0552C33.8654 43.2794 29.133 44 24 44C18.867 44 14.1346 43.2794 10.615 42.0552C8.86463 41.4464 7.30529 40.6757 6.14419 39.7209C4.99695 38.7775 3.99999 37.4427 3.99999 35.7391C3.99999 34.8725 4.29264 34.0922 4.49321 33.6393C4.60375 33.3898 4.71348 33.1804 4.79687 33.0311C4.83898 32.9556 4.87547 32.8935 4.9035 32.8471C4.91754 32.8238 4.92954 32.8043 4.93916 32.7889L4.94662 32.777L4.95178 32.7688ZM35.9868 29.004L24 9.77997L12.0131 29.004C12.4661 28.8609 12.9179 28.7342 13.3617 28.6282C16.4281 27.8961 20.0901 27.4783 24 27.4783C27.9099 27.4783 31.5719 27.8961 34.6383 28.6282C35.082 28.7342 35.5339 28.8609 35.9868 29.004Z"
+                fill="currentColor"
+              ></path>
+            </svg>
+          </div>
+          <!-- Brand Name -->
+          <h2 class="text-[#111518] text-lg font-bold leading-tight tracking-[-0.015em]">Data Insights</h2>
+        </div>
+        <!-- Navigation and Resume Button -->
+        <div class="flex flex-1 justify-end gap-8">
+          <!-- Navigation Links -->
+          <div class="nav-links">
+            <a class="nav-link active" href="projects.html">Projects</a>
+            <a class="nav-link" href="index.html#about">About</a>
+            <a class="nav-link" href="index.html#contact">Contact</a>
+          </div>
+          <!-- Resume Button -->
+          <button class="btn btn-secondary">
+            <span class="truncate">Resume</span>
+          </button>
+        </div>
+      </header>
+
+      <!-- Main Content Container -->
+      <div class="layout-content-container">
+        <!-- Page Title -->
+        <h1 class="section-title">My Projects</h1>
+        
+        <!-- Projects Grid Container -->
+        <div class="projects-grid-full">
+          <!-- Project Card 1: Sales Analysis -->
+          <a href="https://github.com/yourusername/sales-analysis" class="project-card-full">
+            <!-- Project Cover Image -->
+            <div class="project-image" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBIyQ1293Hr6FBWrjdPoQJWtABu2P7JArl9liR607YXwOZ7qlF98E6bKM2ic4TfGj_P-VUthpN2yLA0stvOUanGYtOXCWUNztBlQAooe2V5IC0Bv2kPZuMbn67urETm8iE9xIYqcj3nEtKjvpgcywePB-Sl3TMtAar3mroFIXcaOP26Bn-gTDq_gg5M_ZwwWgWzMhufS62cTOiFUiHTpfqaoTEC03ICTaa_IoRWcLjY9Ek149n11YC2mQHq8iSD4rgSk1fiR6ZHzxA");'></div>
+            <!-- Project Content -->
+            <div class="project-content">
+              <h3 class="project-title">Sales Performance Analysis</h3>
+              <p class="project-description">A comprehensive analysis of sales data to identify key trends and optimize sales strategies. This project includes data visualization, statistical analysis, and actionable insights for business growth.</p>
+              <!-- Technology Tags -->
+              <div class="project-tags">
+                <span class="project-tag">Python</span>
+                <span class="project-tag">Pandas</span>
+                <span class="project-tag">Matplotlib</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Project Card 2: Customer Behavior -->
+          <a href="https://github.com/yourusername/customer-behavior" class="project-card-full">
+            <!-- Project Cover Image -->
+            <div class="project-image" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAMnCr9eVPL9_It6XemI0sFwjNoSlRLLBl3C48AUNIvIbuuslTDl1hj-rvjS2Jr_mDNMdfsEbFUFydqJFH7r_3filcfc2A538T7Ng2uPmcZIVB9iotaBCTWi148bF7ID6EeCLbFuKPfwzHSi0-00eYFtdwqs2S7VZjzYkgmAO65O0F7elzaCNIYDSXGZC8KapblXp71XaQGPMwHY1j79zC4VPX1NAv_yAgk26oDb6OoFAZgSluYuSKf4XpGzsTkZEmx_q5_KkJXOyw");'></div>
+            <!-- Project Content -->
+            <div class="project-content">
+              <h3 class="project-title">Customer Behavior Insights</h3>
+              <p class="project-description">Advanced customer segmentation and behavior analysis to personalize marketing campaigns. This project uses machine learning algorithms to identify patterns and create targeted marketing strategies.</p>
+              <!-- Technology Tags -->
+              <div class="project-tags">
+                <span class="project-tag">R</span>
+                <span class="project-tag">Machine Learning</span>
+                <span class="project-tag">Data Mining</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Project Card 3: Predictive Sales -->
+          <a href="https://github.com/yourusername/predictive-sales" class="project-card-full">
+            <!-- Project Cover Image -->
+            <div class="project-image" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCKaoSq3IufcvgNHQvp0wArTFw96BTEInwcOcW5Mhf4L5_QCPPL2u-3PUORcLfsMyotwelskWQRTC3xFjDuHCXKQbHBfrHWvZXFhLptm7Z9DNDbhA_XAJGboePSXjbsyew6VB3ndeixzpoitJPK04b1e9jfuuuzqaa3WAoSfmqUGAF6k0tvwPOs48cZthtqz5V4KJA9yd01l6FsOC3pL0IB9zoHsvbfrNP4KGbEE6MnZ5-K4zbaitKSD8WLymnjs1iiIua08l-Pf5A");'></div>
+            <!-- Project Content -->
+            <div class="project-content">
+              <h3 class="project-title">Predictive Sales Modeling</h3>
+              <p class="project-description">A sophisticated predictive model for forecasting future sales and optimizing resource allocation. This project implements time series analysis and machine learning to provide accurate sales predictions.</p>
+              <!-- Technology Tags -->
+              <div class="project-tags">
+                <span class="project-tag">Python</span>
+                <span class="project-tag">TensorFlow</span>
+                <span class="project-tag">Time Series</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html> 
